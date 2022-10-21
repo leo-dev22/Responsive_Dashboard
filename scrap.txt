@@ -1,0 +1,8 @@
+- Responsive admin dashboard
+- Create some features
+- Make it in 3 sections (sidebar section, main section(calendar, some cart, order board),right section(Make an udpdate board, sales analytics))
+- toggle menu to change the light 
+- Make a profile
+- Add product button
+
+IT SHOULD BE RESPONSIVE
