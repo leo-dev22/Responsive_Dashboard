@@ -9,6 +9,7 @@
 
   --colorPrimary:#7380ec;
   --colorDanger:#ff7782;
+  --colorBingo:#FF6600;
   --colorSucces:#41f1b6;
   --colorWarning:#ffbb55;
   --colorWhite:#fff;
@@ -94,8 +95,8 @@ b{
 .primary{
   color: var(--colorPrimary);
 }
-.danger{
-  color: var(--colorDanger);
+.bingo{
+  color: var(--colorBingo);
 }
 .succes{
   color: var(--colorSucces);
@@ -112,3 +113,98 @@ b{
   border: 2px blue solid;
 }
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* ASIDE SECTION */
+aside{
+  height: 100vh;
+  background: #41f1b66c;
+}
+aside .top{
+  /* background: #363949; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.4rem;
+}
+aside .logo {
+  display: flex;
+  gap: .85rem;
+}
+aside .logo img{
+  width: 2rem;
+  height: 2rem;
+}
+aside .close{
+  display: none;
+}
+
+/* sidebar----------- */
+aside .sidebar{
+  /* background: white; */
+  display: flex;
+  flex-direction: column;
+  height: 86vh;
+  position: relative;
+  top: 4rem;
+}
+aside h3{
+  font-weight: 500;
+}
+aside .sidebar a{
+display: flex;
+color: var(--colorInfoDark);
+gap: 1rem;
+align-items: center;
+margin-left: 2rem;
+position: relative;
+height: 3.7rem;
+transition: all .3s ease;
+}
+aside .sidebar a span{
+  font-size: 1.6rem;
+  transition: all .3s ease;
+}
+aside .sidebar a:last-child{
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+}
+aside .sidebar a.active{
+  background: var(--colorlight);
+  color:var(--colorPrimary);
+  margin-left: 0;
+}
+aside .sidebar a.active::before{
+  content: '';
+  width: 6px;
+  height: 100%;
+  background: var(--colorPrimary);
+}
+aside .sidebar a.active span{
+  color: var(--colorPrimary);
+  margin-left: calc(1rem - 6px);
+}
+aside .sidebar a:hover{
+  color: var(--colorPrimary);
+}
+aside .sidebar a:hover span{
+  margin-left: .75rem;
+}
+aside .sidebar .messages-count{
+  background: var(--colorBingo);
+  color: var(--colorWhite);
+  padding: 2px 10px;
+  font-size: 11px;
+  border-radius: var(--borderRadius-1);
+}
+
+
+
+
+
+
+
+
+
+
+
