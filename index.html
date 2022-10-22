@@ -20,7 +20,7 @@
   <!-- ASIDE SECTION -->
   <div class="container">
     <aside>
-      <div class="top">
+      <div class="top marginTop">
         <div class="logo">
           <img src="./Assets/logo.png" alt="logo">
           <h2>BIN<span class="bingo">GOO</span> </h2>
@@ -87,10 +87,120 @@
         </a>
       </div>
     </aside>
+ 
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+<!-- Main section -->
+<main class="marginTop">
+  <h1>
+    Dashboard
+  </h1>
+  <div class="date">
+    <input type="date">
   </div>
 
+  <div class="insights">
+    <div class="sales">
+      <span class="material-symbols-sharp">Analytics</span>
 
+      <div class="middle">
+        <div class="left">
+          <h3>Total Sales</h3>
+          <h1>$459,856</h1>
+        </div>
+        <div class="progress">
+          <svg>
+            <circle cx="42" cy="42"    r="40">
+            </circle>
+          </svg>
+          <div class="number">
+            <p>83%</p>
+          </div>
+        </div>
+      </div>
 
+      <small class="text-muted">Last 24h</small>
+    </div>
+    <!--end of sales -->
+    
+    <div class="expenses">
+      <span class="material-symbols-sharp">Bar_Chart</span>
+
+      <div class="middle">
+        <div class="left">
+          <h3>Total Expenses</h3>
+          <h1>$673,543</h1>
+        </div>
+        <div class="progress">
+          <svg>
+            <circle cx="42" cy="42"    r="40">
+            </circle>
+          </svg>
+          <div class="number">
+            <p>78%</p>
+          </div>
+        </div>
+      </div>
+
+      <small class="text-muted">Last 24h</small>
+    </div>
+    <!--end of expenses -->
+    
+    <div class="incomes">
+      <span class="material-symbols-sharp">Stacked_Line_Chart</span>
+
+      <div class="middle">
+        <div class="left">
+          <h3>Total Incomes</h3>
+          <h1>$1,000,856</h1>
+        </div>
+        <div class="progress">
+          <svg>
+            <circle cx="42" cy="42"    r="40">
+            </circle>
+          </svg>
+          <div class="number">
+            <p>93%</p>
+          </div>
+        </div>
+      </div>
+
+      <small class="text-muted">Last 24h</small>
+    </div>
+    <!--end of incomes -->
+    </div>
+    <!-- end of insights------ -->
+
+    <div class="recent-orders">
+      <h2>Recent Orders</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Product Number</th>
+            <th>Payment</th>
+            <th>Status</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td>Bulb Light 50 Watts</td>
+          <td>89543</td>
+          <td>Due</td>
+          <td class="warning">Pending</td>
+          <td class="primary">Details</td>
+         </tr>
+        </tbody>
+      </table>
+      <a href="#">Show All</a>
+    </div>
+    <!-- end of recent orders -->
+   
+  
+</main>
+
+</div>
   <!-- MAIN JS -->
   <script src="./main.js" text="javascript"></script>
 </body>

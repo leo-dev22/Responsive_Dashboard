@@ -4,7 +4,7 @@
 :root{
   --borderRadius-1:.4rem;
   --borderRadius-2:.8rem;
-  --borderRadius-3:.12rem;
+  --borderRadius-3:1.2rem;
   --borderRadiusCard:2rem;
 
   --colorPrimary:#7380ec;
@@ -22,7 +22,7 @@
 
   --cardPadding:1.8rem;
   --padding1:1.2rem;
-  --boxShadow:0 2rem var(--colorlight)
+  --boxShadow:0 2rem 3rem var(--colorlight);
 
 }
 
@@ -50,6 +50,7 @@ body{
   background: var(--colorBackground);
   user-select: none;
   overflow-x: hidden;
+  color: var(--colorDark);
 }
 a{
   color: var(--colorDark);
@@ -103,6 +104,7 @@ b{
 }
 .warning{
   color: var(--warning);
+  /* background: var(--colorWarning); */
 }
 .container{
   display: grid;
@@ -113,6 +115,12 @@ b{
   border: 2px blue solid;
 }
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* **************************** */
+.marginTop{
+  margin-top: 1.4rem;
+}
+
+/* ********************************* */
 
 /* ASIDE SECTION */
 aside{
@@ -124,7 +132,6 @@ aside .top{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 1.4rem;
 }
 aside .logo {
   display: flex;
@@ -198,13 +205,122 @@ aside .sidebar .messages-count{
   border-radius: var(--borderRadius-1);
 }
 
+/* MAIN---------------- */
+main .date{
+  display: inline-block;
+  background: var(--colorlight);
+  border-radius: var(--borderRadius-1);
+  margin-top: 1rem;
+  padding: .5rem 1.6rem;
+  cursor: pointer;
+}
+main .date input[type='date']{
+  background:transparent;
+  color: var(--colorDark);
+  cursor: pointer;
+}
+main .insights{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1.6rem;
+}
+main .insights>div{
+  background: var(--colorWhite);
+  padding: var(--cardPadding);
+  border-radius: var(--borderRadiusCard);
+  margin: .8rem;
+  box-shadow: var(--boxShadow);
+  transition: all 300ms ease;
+}
+main .insights>div:hover{
+  box-shadow: none;
+}
 
+main .insights>div span{
+  background: var(--colorPrimary);
+  color: white;
+  padding: .5rem;
+  border-radius: 50%;
+  font-size: 2.8rem;
+}
+main .insights>div.expenses span{
+  background: var(--colorBingo);
+}
+main .insights>div.incomes span{
+  background: var(--colorSucces);
+}
 
+main .insights>div .middle{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .insights h3{
+  margin: 1rem 0 .6rem;
+  font-size: 1.5rem;
+}
+main .insights .progress{
+  position: relative;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+}
+main .insights .progress svg{
+  width: 7rem;
+  height: 7rem;
+}
+main .insights .progress svg circle{
+  fill: none;
+  stroke: var(--colorPrimary);
+  stroke-width: 10;
+  stroke-linecap: round;
+  transform: translate(6px,6px);
+}
 
+main .insights .sales .progress svg circle{
+  stroke-dasharray: 200;
+  stroke-dashoffset: -30;
+}
+main .insights .expenses .progress svg circle{
+  stroke-dasharray: 168;
+  stroke-dashoffset: 0;
+}
+main .insights .incomes .progress svg circle{
+  stroke-dasharray: 280;
+  stroke-dashoffset: -25;
+}
+main .insights .number{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+main .insights small{
+  margin-top: 1.6rem;
+  display: block;
+}
 
-
-
-
-
-
-
+/* RECENT ORDERS------------ */
+.recent-orders{
+  margin-top: 2rem;
+}
+.recent-orders h2{
+  margin-bottom: .8rem;
+}
+.recent-orders table{
+  background: var(--colorWhite);
+  width: 100%;
+  border-radius: var(--borderRadiusCard);
+  text-align: center;
+  padding: var(--cardPadding);
+  box-shadow: var(--boxShadow);
+  transition: all 300ms ease;
+}
+.recent-orders table:hover{
+  box-shadow: none;
+}
