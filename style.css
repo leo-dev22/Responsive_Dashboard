@@ -494,8 +494,7 @@ color: white;
   
   .container{
     width: 95%;
-    border: 2px solid red;
-    grid-template-columns: 7rem auto 23rem; /********/
+    grid-template-columns: 7rem auto 23rem; 
   }
   aside .logo h2{
     display: none;
@@ -534,7 +533,7 @@ main table thead tr th:first-child{
 }
 }
 
-/* MEDIA QUERY========== */
+/* MEDIA QUERY FOR MOBILE PHONE========== */
 @media screen and (max-width:768px) {
  .container{
   width: 100%;
@@ -580,7 +579,7 @@ main table thead tr th:first-child{
   cursor: pointer;
  }
  main{
-  /* margin-top: 8rem; */
+  margin-top: 8rem;
   padding: 3rem 1rem 0;
  }
  main .recent-orders{
@@ -626,8 +625,5 @@ left: 66%;
 .right .top span{
 font-size: 2rem;
 } 
-
-
-
 
 }
